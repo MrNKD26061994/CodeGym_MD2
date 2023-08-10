@@ -1,5 +1,6 @@
+package A;
 public class QuadraticEquation {
-    private double a;
+    public double a;
     private double b;
     private double c;
 
