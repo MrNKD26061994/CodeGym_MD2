@@ -9,7 +9,7 @@ public class Main {
             System.out.println(number + " is not a prime");
         } else {
             boolean flag = true;
-            for (int i = 2; i < Math.sqrt(number); i++) {
+            for (int i = 2; i <= Math.sqrt(number); i++) {
                 if (number % i == 0) {
                     flag = false;
                     break;

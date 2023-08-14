@@ -1,4 +1,4 @@
-public class Shape {
+public abstract class Shape {
     protected String color;
     protected boolean filled;
     public Shape() {
@@ -10,6 +10,10 @@ public class Shape {
         this.filled = filled;
     }
 
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
+    
     @Override
     public String toString() {
         return "A Shape width color of " + color + " and filled/not " + filled + '.';

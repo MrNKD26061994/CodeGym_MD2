@@ -23,6 +23,8 @@ public class Fan {
         }
     }
 
+//    public void toString()
+
     public int getSpeed() {
         return speed;
     }

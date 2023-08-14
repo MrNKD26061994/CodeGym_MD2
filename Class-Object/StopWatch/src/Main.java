@@ -14,7 +14,7 @@ public class Main {
         stopWatch.stop();
         System.out.println("Thời gian bắt đầu: " + stopWatch.getStartTime());
         System.out.println("Thời gian kết thúc: " + stopWatch.getEndTime());
-        System.out.println("Thời gian thực thi thuật toán: " + (stopWatch.getEndTime() - stopWatch.getStartTime())/1000 + "s");
+        System.out.println("Thời gian thực thi thuật toán: " + (stopWatch.getEndTime() - stopWatch.getStartTime()) + "s");
     }
 
     public static void selectionSort(int[] arr){

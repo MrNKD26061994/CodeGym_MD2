@@ -1,4 +1,3 @@
-package A;
 public class QuadraticEquation {
     public double a;
     private double b;

@@ -11,6 +11,8 @@ public class Main {
         System.out.print("Enter c: ");
         c = scanner.nextDouble();
         QuadraticEquation pt2 = new QuadraticEquation(a, b, c);
+
+
         if(a == 0) {
             if(b == 0){
                 if(c == 0) {
@@ -31,4 +33,5 @@ public class Main {
             }
         }
     }
+
 }
