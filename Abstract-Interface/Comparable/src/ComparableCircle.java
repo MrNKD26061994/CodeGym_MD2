@@ -1,6 +1,5 @@
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle>{
     public ComparableCircle() {}
-
     public ComparableCircle(double radius) {
         this.radius = radius;
     }
