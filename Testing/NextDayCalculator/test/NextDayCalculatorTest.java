@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class NextDayCalculatorTest {
 
@@ -14,6 +15,7 @@ public class NextDayCalculatorTest {
         assertEquals(date.getDay(), expected.getDay());
         assertEquals(date.getMonth(), expected.getMonth());
         assertEquals(date.getYear(), expected.getYear());
+//        assertTrue(date.equals(expected));
     }
 
 
