@@ -28,5 +28,7 @@ public class Main {
             System.out.printf("%s ", myStackString.pop());
         }
         System.out.println("\n1.3. Size of stack after pop operations : " + myStackString.size());
+
+        LinkedList<Integer> s = new LinkedList<>();
     }
 }

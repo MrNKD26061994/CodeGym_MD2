@@ -69,10 +69,11 @@ public class MyLinkedList<T> {
         numNodes--;
     }
     public void remove(T data){
+        Node temp = head;
         if(head.getData().equals(data)) {
-            removeFirst();
+            head = temp.next;
+            temp.next = null;
         } else {
-            Node temp = head;
             while (temp.next != null){
                 if(temp.next.getData() == data){
                     Node tempNode = temp.next;
@@ -82,14 +83,15 @@ public class MyLinkedList<T> {
                 }
                 temp = temp.next;
             }
-            numNodes--;
         }
+        numNodes--;
     }
     public void remove(int index) {
+        Node temp = head;
         if(index == 0) {
-            removeFirst();
+            head = temp.next;
+            temp.next = null;
         }else {
-            Node temp = head;
             for (int i = 0; temp.next != null; i++) {
                 if(i == index - 1){
                     Node tempNode = temp.next;
@@ -99,8 +101,8 @@ public class MyLinkedList<T> {
                 }
                 temp=temp.next;
             }
-            numNodes--;
         }
+        numNodes--;
     }
     public T removeFirst() {
         Node temp = head;
@@ -116,6 +118,18 @@ public class MyLinkedList<T> {
         }
         temp.next = null;
         numNodes--;
+        return (T) temp.getData();
+    }
+
+    public T getFirst() {
+        return head.getData();
+    }
+
+    public T getLast() {
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
         return (T) temp.getData();
     }
 

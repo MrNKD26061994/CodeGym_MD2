@@ -30,6 +30,10 @@ public class MyStack<T> {
         return false;
     }
 
+    public T peek() {
+        return stack.getFirst();
+    }
+
     public MyLinkedList<T> getStack() {
         return stack;
     }
