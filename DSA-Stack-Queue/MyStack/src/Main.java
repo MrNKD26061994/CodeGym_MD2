@@ -15,7 +15,6 @@ public class Main {
         }
         System.out.println("\n3.3 Size of stack after pop operations : " + myStackInteger.size());
 
-
         MyStack<String> myStackString = new MyStack<>();
         myStackString.push("Five");
         myStackString.push("Four");
@@ -29,6 +28,15 @@ public class Main {
         }
         System.out.println("\n1.3. Size of stack after pop operations : " + myStackString.size());
 
-        LinkedList<Integer> s = new LinkedList<>();
+
+        MyQueue queue = new MyQueue();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.dequeue();
+        queue.dequeue();
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        System.out.println("Dequeued item is " + queue.dequeue().key);
     }
 }
