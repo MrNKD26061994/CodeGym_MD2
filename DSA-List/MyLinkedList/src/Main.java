@@ -11,8 +11,7 @@ public class Main {
         myLinkedList.add(101);
         myLinkedList.addFirst(423432);
         myLinkedList.printList();
-        myLinkedList.remove((Integer)50);
+        myLinkedList.remove(5);
         myLinkedList.printList();
-        
     }
 }

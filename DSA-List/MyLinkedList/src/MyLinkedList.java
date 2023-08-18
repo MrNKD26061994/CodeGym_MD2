@@ -27,6 +27,19 @@ public class MyLinkedList {
     }
 
     public void add(Object data) {
+        addLast(data);
+    }
+
+    public void addFirst(Object data) {
+        Node temp = head;
+        Node tempNode = new Node();
+        tempNode.setData(data);
+        head = tempNode;
+        head.next = temp;
+        numNodes++;
+    }
+
+    public void addLast(Object data) {
         Node tempNode = new Node();
         tempNode.setData(data);
         tempNode.next = null;
@@ -42,30 +55,15 @@ public class MyLinkedList {
         }
     }
 
-    public void addFirst(Object data) {
-        Node temp = head;
-        Node tempNode = new Node();
-        tempNode.setData(data);
-        head = tempNode;
-        head.next = temp;
-        numNodes++;
-    }
-
     public void remove(){
-        Node temp = head;
-        while (temp.next.next != null) {
-            temp = temp.next;
-        }
-        temp.next = null;
+        removeLast();
     }
     public void remove(Object data){
-        Node temp = head;
-        if(temp.getData().equals(data)) {
-            head = temp.next;
-            temp.next = null;
+        if(head.getData().equals(data)) {
+            removeFirst();
         } else {
+            Node temp = head;
             while (temp.next != null){
-                System.out.println(temp.next.getData());
                 if(temp.next.getData() == data){
                     Node tempNode = temp.next;
                     temp.next = temp.next.next;
@@ -76,13 +74,11 @@ public class MyLinkedList {
             }
         }
     }
-
     public void remove(int index) {
-        Node temp = head;
         if(index == 0) {
-            head = temp.next;
-            temp.next = null;
+            removeFirst();
         }else {
+            Node temp = head;
             for (int i = 0; temp.next != null; i++) {
                 if(i == index - 1){
                     Node tempNode = temp.next;
@@ -94,6 +90,20 @@ public class MyLinkedList {
             }
         }
     }
+    public void removeFirst() {
+        Node temp = head;
+        head = temp.next;
+        temp.next = null;
+    }
+    public void removeLast() {
+        Node temp = head;
+        while (temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
+    }
+
+
     public void printList() {
         Node temp = head;
         while (temp!= null) {
