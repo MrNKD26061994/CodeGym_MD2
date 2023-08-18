@@ -9,23 +9,97 @@ public class MyLinkedList {
         head = new Node(data);
     }
 
+    public boolean isEmpty(){
+        if(head == null)return true;
+        return false;
+    }
+
     public void add(int index, Object data) {
         Node temp = head;
-        Node holder;
+        Node tempNode = new Node();
+        tempNode.setData(data);
         for (int i = 0; i < index - 1 && temp.next != null; i++) {
             temp = temp.next;
         }
+        tempNode.next = temp.next;
+        temp.next = tempNode;
+        numNodes++;
     }
 
     public void add(Object data) {
+        Node tempNode = new Node();
+        tempNode.setData(data);
+        tempNode.next = null;
+        if(isEmpty()) {
+            head = tempNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = tempNode;
+            numNodes++;
+        }
+    }
+
+    public void addFirst(Object data) {
         Node temp = head;
-        while (temp.next == null) {
+        Node tempNode = new Node();
+        tempNode.setData(data);
+        head = tempNode;
+        head.next = temp;
+        numNodes++;
+    }
+
+    public void remove(){
+        Node temp = head;
+        while (temp.next.next != null) {
             temp = temp.next;
         }
-        Node holder = temp.next;
-        temp.next = new Node(data);
-        temp.next.next = holder;
-        numNodes++;
+        temp.next = null;
+    }
+    public void remove(Object data){
+        Node temp = head;
+        if(temp.getData().equals(data)) {
+            head = temp.next;
+            temp.next = null;
+        } else {
+            while (temp.next != null){
+                System.out.println(temp.next.getData());
+                if(temp.next.getData() == data){
+                    Node tempNode = temp.next;
+                    temp.next = temp.next.next;
+                    tempNode.next = null;
+                    break;
+                }
+                temp = temp.next;
+            }
+        }
+    }
+
+    public void remove(int index) {
+        Node temp = head;
+        if(index == 0) {
+            head = temp.next;
+            temp.next = null;
+        }else {
+            for (int i = 0; temp.next != null; i++) {
+                if(i == index - 1){
+                    Node tempNode = temp.next;
+                    temp.next = temp.next.next;
+                    tempNode.next = null;
+                    break;
+                }
+                temp=temp.next;
+            }
+        }
+    }
+    public void printList() {
+        Node temp = head;
+        while (temp!= null) {
+            System.out.println(temp.getData());
+            temp = temp.next;
+        }
     }
 
     public Node get(int index) {
@@ -38,13 +112,19 @@ public class MyLinkedList {
 
     private class Node{
         private Node next;
-        private final Object data;
+        private Object data;
 
+        public Node() {
+        }
         public Node(Object data) {
             this.data = data;
         }
         public Object getData() {
             return this.data;
+        }
+
+        public void setData(Object data) {
+            this.data = data;
         }
     }
 }
