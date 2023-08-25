@@ -1,0 +1,5 @@
+Ghi chuỗi ký tự ra tệp văn bản
+
+Sử dụng cơ chế chuỗi hóa cho việc lưu trữ đối tượng là cách dễ dàng nhất để lưu trữ và khôi phục dữ liệu giữa các lần chạy của một chương trình Java. Nhưng đôi khi, ta cũng cần lưu dữ liệu vào một file văn bản, chẳng hạn khi file đó để cho một chương trình khác (có thể không viết bằng Java) đọc.
+
+Việc ghi một chuỗi kí tự ra file văn bản tương tự với việc ghi một đối tượng, chỉ khác ở chỗ ta ghi một đối tượng String thay vì một đối tượng chung chung, và ta dùng các dòng khác thay cho FileOutputStream và ObjectOutputStream.
