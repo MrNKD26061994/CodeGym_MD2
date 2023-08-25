@@ -1,10 +1,6 @@
 package read_file_csv;
 
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +22,21 @@ public class ReadAndWriteFile {
             System.err.println("File không tồn tại");
         }
         return listContry;
+    }
+
+    public void writeFile(String filePath, List<Country> listCoutry){
+        try {
+            FileWriter writer = new FileWriter(filePath);
+            BufferedWriter bufferedWriter = new BufferedWriter(writer);
+            for (Country item : listCoutry) {
+                bufferedWriter.write(item.getId() + ",");
+                bufferedWriter.write("\"" + item.getCode() + "\"" + ",");
+                bufferedWriter.write("\"" + item.getName() + "\"" + "\n");
+            }
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
     public Country getCountry(String str) {

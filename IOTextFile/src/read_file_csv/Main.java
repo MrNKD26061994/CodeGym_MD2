@@ -1,6 +1,5 @@
 package read_file_csv;
 
-
 import java.util.List;
 
 public class Main {
@@ -10,6 +9,7 @@ public class Main {
         for (Country item : listContry) {
             System.out.println(item.getName());
         }
+        readAndWriteFile.writeFile("src/read_file_csv/result.txt", listContry );
     }
 
 }
