@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75a490d1-314a-4877-8d24-345783c5e83a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CleanCode/Refactoring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CleanCode/Refactoring/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CleanCode/Refactoring/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CleanCode/Refactoring/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CleanCode/RefactoringTachBien/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CleanCode/RefactoringTachBien/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IOBinary/src/ReadWriteStudent/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IOBinary/src/ReadWriteStudent/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IOBinary/src/ReadWriteStudent/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../IOBinary/src/ReadWriteStudent/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IOTextFile/src/copy_file_text/source.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../IOTextFile/src/copy_file_text/source.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IOTextFile/src/copy_file_text/target.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../IOTextFile/src/copy_file_text/target.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IOTextFile/src/read_file_csv/file.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../IOTextFile/src/read_file_csv/file.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inheritance/HeDoiTuongHinhHoc/src/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Search/ChuoiTangDanLonNhat/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Search/ChuoiTangDanLonNhat/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sort/src/bubble_sort/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sort/src/bubble_sort/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2UhTC9Lvn2cN5KCloKGhaGNFWlV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75a490d1-314a-4877-8d24-345783c5e83a" name="Changes" comment="" />
+      <created>1693390683416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693390683416</updated>
+      <workItem from="1693390684432" duration="80000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
